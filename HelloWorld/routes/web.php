@@ -2,8 +2,9 @@
 
 use App\Http\Controllers\CountriesController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/countries', [CountriesController::class, 'index']);
+// Route::get('/countries', [CountriesController::class, 'index']);
+Route::get('/', [CountriesController::class, 'index']);
